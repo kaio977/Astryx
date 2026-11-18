@@ -1460,6 +1460,7 @@ function redzlib:MakeWindow(Configs)
         BackgroundTransparency = 1,
         Image = "rbxassetid://95790427461481",
         ImageTransparency = 0.1, -- Ajuste a transparência como preferir
+        ScaleType = Enum.ScaleType.Crop,
         ZIndex = 0 -- Garante que fique atrás de tudo
     })
 
@@ -1495,7 +1496,6 @@ function redzlib:MakeWindow(Configs)
 	})
 	
 	local MainCorner = Make("Corner", MainFrame)
-	local ImageCorner = Make("Corner", BgImage)
 	
 	local Components = Create("Folder", MainFrame, {
 		Name = "Components"
@@ -1535,7 +1535,7 @@ function redzlib:MakeWindow(Configs)
 			BackgroundTransparency = 1,
 			TextXAlignment = "Left",
 			TextYAlignment = "Bottom",
-			TextSize = 11,
+			TextSize = 10,
 			Font = Enum.Font.Gotham,
 			Name = "SubTitle"
 		}), "DarkText")
