@@ -1554,7 +1554,9 @@ function redzlib:MakeWindow(Configs)
         Transparency = NumberSequence.new(0.8) 
 	})MakeDrag(MainFrame)
 	
-	local MainCorner = Make("Corner", MainFrame, BgImage, BgShade, UDim.new(0, 10))
+	local MainCorner = Make("Corner", MainFrame, UDim.new(0, 10))
+	local MainCorner = Make("Corner", BgImage, UDim.new(0, 10))
+	local MainCorner = Make("Corner", BgShade, UDim.new(0, 10))
 	Make("Stroke", MainFrame, {Transparency = 0.2})
 	
 	local Components = Create("Folder", MainFrame, {
