@@ -1460,7 +1460,6 @@ function redzlib:MakeWindow(Configs)
         BackgroundTransparency = 1,
         Image = "rbxassetid://95790427461481",
         ImageTransparency = 0.1, -- Ajuste a transparência como preferir
-        ScaleType = Enum.ScaleType.Crop,
         ZIndex = 0 -- Garante que fique atrás de tudo
     })
 
@@ -1512,7 +1511,7 @@ function redzlib:MakeWindow(Configs)
 		Name = "Top Bar"
 	})
 
-    MakeDrag(TopBar)
+    MakeDrag(MainFrame)
 	
 	local Title = InsertTheme(Create("TextLabel", TopBar, {
 		Position = UDim2.new(0, 15, 0.5),
