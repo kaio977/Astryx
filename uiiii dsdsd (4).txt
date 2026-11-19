@@ -1513,21 +1513,21 @@ function redzlib:MakeWindow(Configs)
 
     local TopBarImage = Create("ImageLabel", TopBar, {
         Size = UDim2.new(0, 26, 0, 26),
-        Position = UDim2.new(0, 5, 0, 6),
+        Position = UDim2.new(0, 15, 0, 6),
         BackgroundTransparency = 1,
         Image = "rbxassetid://10734982144",
         Name = "TopBarImage"
     })
 
-    MakeDrag(TopBar, MainFrame)
+    MakeDrag(MainFrame)
     Make("Corner", TopBarImage, UDim.new(0, 5))	
 	local Title = InsertTheme(Create("TextLabel", TopBar, {
-		Position = UDim2.new(0, 35, 0.5),
+		Position = UDim2.new(0, 45, 0.5),
 		AnchorPoint = Vector2.new(0, 0.5),
 		AutomaticSize = "XY",
 		Text = WTitle,
 		TextXAlignment = "Left",
-		TextSize = 15,
+		TextSize = 12,
 		TextColor3 = Theme["Color Text"],
 		BackgroundTransparency = 1,
 		Font = Enum.Font.FredokaOne,  --GothamMedium
@@ -1543,7 +1543,7 @@ function redzlib:MakeWindow(Configs)
 			BackgroundTransparency = 1,
 			TextXAlignment = "Left",
 			TextYAlignment = "Bottom",
-			TextSize = 10,
+			TextSize = 9,
 			Font = Enum.Font.Gotham,
 			Name = "SubTitle"
 		}), "DarkText")
@@ -1653,7 +1653,7 @@ function redzlib:MakeWindow(Configs)
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
 			Title = "Fechar",
-			Text = "Deseja realmente fechar o Astryx Hub?",
+			Text = "Deseja realmente fechar o Moon Hub?",
 			Options = {
 				{"Confirmar", function()
 					ScreenGui:Destroy()
