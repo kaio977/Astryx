@@ -1483,7 +1483,7 @@ function redzlib:MakeWindow(Configs)
         Size = UDim2.new(0, 28, 0, 28),
         Position = UDim2.new(0, 14, 0, 11),
         BackgroundTransparency = 1,
-        Image = "rbxassetid://10734982144",
+        Image = "rbxassetid://134519098854108",
         Name = "TopBarImage"
     })
 
