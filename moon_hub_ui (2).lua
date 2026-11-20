@@ -1495,7 +1495,7 @@ function redzlib:MakeWindow(Configs)
 		AutomaticSize = "XY",
 		Text = WTitle,
 		TextXAlignment = "Left",
-		TextSize = 23,
+		TextSize = 19,
 		TextColor3 = Theme["Color Text"],
 		BackgroundTransparency = 1,
 		Font = Enum.Font.Creepster, 
@@ -1511,7 +1511,7 @@ function redzlib:MakeWindow(Configs)
 			BackgroundTransparency = 1,
 			TextXAlignment = "Left",
 			TextYAlignment = "Bottom",
-			TextSize = 15,
+			TextSize = 13,
 			Font = Enum.Font.Creepster,
 			Name = "SubTitle"
 		}), "DarkText")
